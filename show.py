@@ -44,5 +44,5 @@ for image in imagelist:
             cv.rectangle(img, (x1, y1), (x2, y2), (255, 255, 255), thickness=2)
             cv.putText(img, objectname, (x1, y1), cv.FONT_HERSHEY_COMPLEX, 0.7, (0, 255, 0),
                        thickness=2)
-            # cv.imshow('head', img)
+            # cv.imshow('head', img)    #尽量不要每张都展示，没啥用
         cv.imwrite("./voc_out/"+ image_pre+ ".jpg", img)   #save picture
